@@ -12,3 +12,15 @@ console.log(cowsay.say({
     e: "oO",
     T: "V "
 }));
+
+// ------------Major Commands--------------------
+
+//npm view <package name> version   -> To get the version listing
+//npm <package name>@version    -> To get the exact versioning of the package
+//npm uninstall <package name> -> To uninstall the package
+
+//-------------Export Data --------------------
+const {ford,hyundai} = require("./car");
+const chalk = require('chalk');
+console.log(JSON.stringify(ford,null,2));
+console.log(JSON.stringify(hyundai,undefined,3));
